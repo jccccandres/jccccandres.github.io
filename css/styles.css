@@ -120,3 +120,25 @@ footer .footer-text h4, footer .footer-text small {
 	justify-content: center;
 }
 /* / footer  */
+
+/* about */
+main .about {
+	padding: 50px 10%;
+}
+
+main .about ul {
+	display: flex;
+	list-style-type: none;
+	margin: 20px 0;
+}
+
+main .about ul li, main .about p {
+	text-align: center;
+	padding: 0 70px;
+}
+
+main .about ul li img {
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+/* about */
