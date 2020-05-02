@@ -1,4 +1,5 @@
 ## jccccandres.github.io
+Front-end development practice.
 
 ## References
 ### Colors
