@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -180,9 +180,9 @@ footer .footer-text h4, footer .footer-text small {
 
 .story .collage .item figcaption {
 	padding: 8px;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Caveat', cursive;
 }
 
 .story .collage .item:nth-child(1) {
