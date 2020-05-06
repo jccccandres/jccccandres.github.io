@@ -65,12 +65,12 @@ header img {
 
 header .text-header {
 	color: #fff;
-    position: absolute;
-    width: 100%;
-    top: 44%;
-    z-index: 3;
-    text-align: center;
-    padding: 0 30%;
+	position: absolute;
+	width: 100%;
+	top: 44%;
+	z-index: 3;
+	text-align: center;
+	padding: 0 30%;
 }
 
 header .text-header h2 {
@@ -181,9 +181,9 @@ footer .footer-text h4, footer .footer-text small {
 
 .story .collage .item figcaption {
 	padding: 8px;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Caveat', cursive;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Caveat', cursive;
 }
 
 .story .collage .item:nth-child(1) {
@@ -215,19 +215,73 @@ footer .footer-text h4, footer .footer-text small {
 
 .message p {
 	padding: 75px 18% 60px;
-    color: #757575;
-    font-size: 19px;
-    line-height: 1.3;
+	color: #757575;
+	font-size: 19px;
+	line-height: 1.3;
 }
 
 .message h2 {
 	padding: 0px 18% 20px;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
 }
 
 .message img {
 	padding-bottom: 30px;
 }
 /* / message */
+
+/* featured */
+.featured .row {
+	display: flex;
+	height: 50vh;
+}
+
+.featured .row .small-item {
+	width: 33.3333%;
+	position: relative;
+}
+
+.featured .row .large-item {
+	width: 66.6666%;
+	position: relative;
+}
+
+.featured .row .overlay {
+	opacity: 0;
+}
+
+.featured .row .overlay:hover {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.featured .row .overlay .overlay-text {
+	top: 48%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.featured .row .overlay .title, .featured .row .overlay .subtitle {
+	color: #fff;
+	display: block;
+}
+
+.featured .row .overlay .title {
+	font-size: 33px;
+	font-weight: 500;
+}
+
+.featured .row .overlay .subtitle {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.featured .row .small-item img, .featured .row .large-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* / featured */
