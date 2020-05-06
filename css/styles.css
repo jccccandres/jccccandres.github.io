@@ -65,11 +65,12 @@ header img {
 
 header .text-header {
 	color: #fff;
-	position: absolute;
-	width: 400px;
-	left: 10%;
-	top: 40%;
-	z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 44%;
+    z-index: 3;
+    text-align: center;
+    padding: 0 30%;
 }
 
 header .text-header h2 {
