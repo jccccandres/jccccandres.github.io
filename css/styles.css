@@ -129,7 +129,7 @@ footer .footer-text h4, footer .footer-text small {
 /* / footer  */
 
 /* about */
-.about ul li {
+/*.about ul li {
 	display: flex;
 }
 
@@ -153,14 +153,14 @@ footer .footer-text h4, footer .footer-text small {
 
 .about ul li .text-container h3 {
 	padding: 20px 0;
-}
+}*/
 /* about */
 
 
 /* story */
 .story {
 	background: #222f3e;
-	height: 500px;
+	height: auto;
 }
 
 .story .collage {
@@ -212,6 +212,41 @@ footer .footer-text h4, footer .footer-text small {
 .story .collage .item:nth-child(4) {
 	transform: rotate(-15deg);
 	z-index: 1;
+}
+
+.story .about {
+	display: inline-grid;
+	padding-bottom: 40px;
+}
+
+.story .about .sel, .story .about .jc {
+	padding: 70px 25% 0px;
+}
+
+.story .about .sel .image-container {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.story .about .jc .image-container {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+.story .about .image-container img {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 3%;
+}
+
+.story .about aside h2, .story .about aside p {
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: justify;
+}
+
+.story .about aside p {
+	font-weight: 300;
 }
 /* / story */
 
