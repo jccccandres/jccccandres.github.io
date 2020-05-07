@@ -22,6 +22,13 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	background-color: rgba(0,0,0,0);
+	transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.change-bg {
+	background-color: #576574;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .navbar a {
@@ -235,7 +242,7 @@ footer .footer-text h4, footer .footer-text small {
 /* featured */
 .featured .row {
 	display: flex;
-	height: 50vh;
+	height: calc(50vh - 35px);
 }
 
 .featured .row .small-item {
