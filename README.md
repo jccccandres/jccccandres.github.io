@@ -14,3 +14,6 @@ Front-end development practice.
 ### Publish website with github
 [https://medium.com/@svinkle/publish-and-share-your-own-website-for-free-with-github-2eff049a1cb5](https://medium.com/@svinkle/publish-and-share-your-own-website-for-free-with-github-2eff049a1cb5)
 
+
+### Social Media Icons
+[https://codepen.io/kieranfivestars/pen/gbOWbM](https://codepen.io/kieranfivestars/pen/gbOWbM)
