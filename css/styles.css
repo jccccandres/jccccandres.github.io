@@ -63,6 +63,36 @@ a:hover {
 header {
 	height: 100vh;
 	position: relative;
+	overflow: hidden;
+}
+
+header .sliders {
+	display: none;
+}
+
+header .sliders.show {
+	display: block;
+}
+
+header .prev-slide {
+	left: 0;
+}
+
+header .next-slide {
+	right: 0;
+}
+
+header .prev-slide, header .next-slide {
+	position: absolute;
+    height: 100%;
+    width: 25%;
+    z-index: 4;
+    cursor: pointer;
+    opacity: 0;
+}
+
+header .prev-slide:hover, header .next-slide:hover {
+	opacity: 0.1;
 }
 
 header img {
