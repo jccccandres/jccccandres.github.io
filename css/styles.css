@@ -73,7 +73,7 @@ header .sliders {
 
 header .sliders.show {
 	display: block;
-	animation: 2s fadein;
+	animation: 3s fadein;
 }
 
 @keyframes fadein {
