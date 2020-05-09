@@ -61,6 +61,7 @@ a:hover {
 
 /* header */
 header {
+	background-color: #000;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
@@ -72,6 +73,16 @@ header .sliders {
 
 header .sliders.show {
 	display: block;
+	animation: 2s fadein;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 header .prev-slide {
@@ -99,10 +110,6 @@ header .prev-slide img, header .next-slide img {
 	height: 70%;
 	width: 70%;
 }
-
-/*header .prev-slide:hover, header .next-slide:hover {
-	opacity: 0.1;
-}*/
 
 header img {
 	width: 100%;
