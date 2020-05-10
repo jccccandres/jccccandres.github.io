@@ -1,0 +1,39 @@
+@media screen and (max-device-width: 1300px) {
+	.story .collage {
+		display: block;
+		margin: 0 11.25%;
+	}
+
+	.story .collage .group {
+		justify-content: space-around;
+		margin-bottom: 60px;
+	}
+
+	.story .collage .group:nth-child(2) .item:nth-child(1) {
+		transform: rotate(-3deg);
+	}
+	.story .collage .group:nth-child(2) .item:nth-child(2) {
+		transform: rotate(4deg);
+	}
+}
+
+@media screen and (max-device-width: 900px) {
+	.story .collage {
+		margin: 0 6.25%;
+	}
+
+	.story .collage .group {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-device-width: 600px) {
+	.story .collage {
+		margin: 0;
+	}
+
+	.story .collage .group {
+		display: block;
+		text-align: -webkit-center;
+	}
+}

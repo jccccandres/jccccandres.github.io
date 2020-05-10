@@ -180,7 +180,11 @@ footer .footer-text h4 {
 	padding-top: 50px;
 }
 
-.story .collage .item {
+.story .collage .group {
+	display: flex;
+}
+
+.story .collage .group .item {
 	border: 1px solid white;
 	width: 300px;
 	height: 350px;
@@ -190,36 +194,36 @@ footer .footer-text h4 {
 	background: #fff;
 }
 
-.story .collage .item img {
+.story .collage .group .item img {
 	width: 100%;
 	height: 80%;
 	object-fit: cover;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.story .collage .item figcaption {
+.story .collage .group .item figcaption {
 	padding: 8px;
 	font-size: 30px;
 	text-align: center;
 	font-family: 'Caveat', cursive;
 }
 
-.story .collage .item:nth-child(1) {
+.story .collage .group:nth-child(1) .item:nth-child(1) {
 	transform: rotate(7deg);
 	z-index: 1;
 }
 
-.story .collage .item:nth-child(2) {
+.story .collage .group:nth-child(1) .item:nth-child(2) {
 	transform: rotate(-10deg);
 	z-index: 3;
 }
 
-.story .collage .item:nth-child(3) {
+.story .collage .group:nth-child(2) .item:nth-child(1) {
 	transform: rotate(15deg);
 	z-index: 2;
 }
 
-.story .collage .item:nth-child(4) {
+.story .collage .group:nth-child(2) .item:nth-child(2) {
 	transform: rotate(-15deg);
 	z-index: 1;
 }
