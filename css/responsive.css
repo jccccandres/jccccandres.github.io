@@ -25,6 +25,15 @@
 	.story .about .sel, .story .about .jc {
 		margin: 30px 20% 0 28%;
 	}
+
+	.featured .row {
+		display: inline;
+	}
+
+	.featured .row .small-item, .featured .row .large-item {
+		width: 100%;
+		height: calc(50vh - 35px);
+	}
 }
 
 @media screen and (max-device-width: 900px) {
@@ -57,6 +66,14 @@
 
 	.story .about .sel, .story .about .jc {
 		margin: 30px 13% 0 22%;
+	}
+
+	.featured .row .overlay {
+		opacity: 1;
+	}
+
+	.featured .row .overlay .overlay-text {
+		top: 46%;
 	}
 }
 
@@ -120,8 +137,6 @@
 		margin: 0;
 	}
 
-
-
 	.story .collage {
 		margin: 0;
 	}
@@ -133,6 +148,10 @@
 
 	.story .about .sel, .story .about .jc {
 		margin: 30px 5% 0 18%;
+	}
+
+	.featured .row .overlay .overlay-text {
+		top: 41%;
 	}
 }
 
