@@ -21,6 +21,12 @@
 	}
 }
 
+@media screen and (max-device-width: 1024px) {
+	.story .about .sel, .story .about .jc {
+		margin: 30px 20% 0 28%;
+	}
+}
+
 @media screen and (max-device-width: 900px) {
 	header {
 		height: 50vh;
@@ -47,6 +53,10 @@
 
 	.story .collage .group {
 		margin-bottom: 0;
+	}
+
+	.story .about .sel, .story .about .jc {
+		margin: 30px 13% 0 22%;
 	}
 }
 
@@ -120,6 +130,10 @@
 		display: block;
 		text-align: -webkit-center;
 	}
+
+	.story .about .sel, .story .about .jc {
+		margin: 30px 5% 0 18%;
+	}
 }
 
 @media screen and (max-device-width: 480px) {
@@ -131,10 +145,50 @@
 	header .text-header h2 {
 		font-size: 30px;
 	}
+
+	.story .about .sel, .story .about .jc {
+		display: block;
+		margin: 150px 5% 0;
+		position: relative;
+	}
+
+	.story .about .image-container {
+		transform: translateY(-120px);
+		margin: 0 27%;
+	}
+
+	.story .about aside {
+		position: absolute;
+		top: -10px;
+		width: 100%;
+		margin: 25% 0;
+		padding: 0 20px;
+		overflow: scroll;
+		height: 130px;
+	}
 }
 
 @media screen and (max-device-width: 420px) {
 	header .text-header span {
 		display: none;
+	}
+
+	.story .about .image-container {
+		margin: 0 24%;
+	}
+
+	.story .about aside {
+		height: 140px;
+	}
+}
+
+@media screen and (max-device-width: 375px) {
+	.story .about .image-container {
+		margin: 0 20%;
+	}
+
+	.story .about aside {
+		top: 0;
+		height: 150px;
 	}
 }
