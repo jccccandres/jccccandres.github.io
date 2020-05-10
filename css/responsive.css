@@ -37,6 +37,10 @@
 		width: 100px;
 	}
 
+	.message p {
+		padding: 50px 10%;
+	}
+
 	.story .collage {
 		margin: 0 6.25%;
 	}
