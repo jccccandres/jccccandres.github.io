@@ -27,12 +27,13 @@
 	}
 
 	.featured .row {
-		display: inline;
+		/*display: inline;*/
+		height: calc(27vh - 35px);
 	}
 
 	.featured .row .small-item, .featured .row .large-item {
-		width: 100%;
-		height: calc(50vh - 35px);
+		/*width: 100%;*/
+		height: calc(27vh - 35px);
 	}
 }
 
@@ -73,7 +74,7 @@
 	}
 
 	.featured .row .overlay .overlay-text {
-		top: 46%;
+		top: 36%;
 	}
 }
 
@@ -148,6 +149,16 @@
 
 	.story .about .sel, .story .about .jc {
 		margin: 30px 5% 0 18%;
+	}
+
+	.featured .row {
+		display: inline;
+		height: calc(50vh - 35px);
+	}
+
+	.featured .row .small-item, .featured .row .large-item {
+		width: 100%;
+		height: calc(50vh - 35px);
 	}
 
 	.featured .row .overlay .overlay-text {
