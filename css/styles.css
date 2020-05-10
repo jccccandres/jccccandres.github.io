@@ -27,6 +27,16 @@ body {
 	transition: background-color 0.5s ease-in-out;
 }
 
+.navbar .navbar-toggle {
+	position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+    display: none;
+}
+
 .navbar.change-bg {
 	background-color: #576574;
 	transition: background-color 0.5s ease-in-out;

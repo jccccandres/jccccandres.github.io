@@ -3,7 +3,9 @@ $(function(){
 		$(".navbar").toggleClass('change-bg', $(this).scrollTop() > $("header").height());
 	});
 
-
+	$(".navbar-toggle").on("click", () => {
+		$(".main-nav").toggleClass("active");
+	});
 
 
 	const sliders = $(".sliders");

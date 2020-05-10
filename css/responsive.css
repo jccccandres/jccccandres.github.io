@@ -28,6 +28,58 @@
 }
 
 @media screen and (max-device-width: 600px) {
+	.navbar {
+		display: block;
+	}
+
+	.navbar .navbar-toggle {
+		display: block;
+	}
+
+	.navbar .logo {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.navbar .main-nav {
+		display: none;
+		margin: 0;
+	}
+
+	.navbar .main-nav.active {
+		display: block;
+		margin-top: 20px;
+		padding: 1px 0;
+		background-color: rgba(0,0,0,0);
+		transition: background-color 0.5s ease-in-out;
+	}
+
+	.navbar.change-bg {
+		background-color: #576574;
+		transition: background-color 0.5s ease-in-out;
+		box-shadow: none;
+	}
+
+	.navbar.change-bg .main-nav.active {
+		background-color: #576574;
+		transition: background-color 0.5s ease-in-out;
+	}
+
+	.navbar.change-bg .main-nav.active li {
+		border-top: 1px solid rgba(255, 255, 255, .75);
+	}
+
+	.navbar .main-nav li {
+		text-align: center;
+		padding: 10px;
+	}
+
+	.navbar .main-nav li a {
+		margin: 0;
+	}
+
+
+
 	.story .collage {
 		margin: 0;
 	}
