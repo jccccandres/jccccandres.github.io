@@ -1,10 +1,32 @@
 $(function(){
-	$(document).scroll(function() {
-		$(".navbar").toggleClass('change-bg', $(this).scrollTop() > $("header").height());
-	});
+	let nav_visible = 0;
 
+	$(document).scroll(function() {
+		if (!$(".navbar").hasClass('change-bg') && $(this).scrollTop() > $("header").height()) {
+			$(".navbar").addClass('change-bg');
+		}
+		else if (nav_visible == 0 && $(this).scrollTop() <= $("header").height()) {
+			$(".navbar").removeClass('change-bg');
+		}
+	});
+	
 	$(".navbar-toggle").on("click", () => {
-		$(".main-nav").toggleClass("active");
+		$(".main-nav").animate({
+			height: 'toggle'
+		}, "slow");
+
+		if (nav_visible == 0) {
+			nav_visible = 1;
+			$(".navbar").addClass('change-bg');
+		}
+		else {
+			nav_visible = 0;
+			if ($(this).scrollTop() < $("header").height()) {
+				$(".navbar").removeClass('change-bg');
+			}
+		}
+
+		
 	});
 
 

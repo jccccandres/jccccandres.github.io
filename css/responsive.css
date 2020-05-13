@@ -103,11 +103,11 @@
 
 	.navbar .main-nav {
 		display: none;
+		overflow: hidden;
 		margin: 0;
 	}
 
-	.navbar .main-nav.active {
-		display: block;
+	.navbar .main-nav {
 		margin-top: 20px;
 		padding: 1px 0;
 		background-color: rgba(0,0,0,0);
@@ -120,12 +120,12 @@
 		box-shadow: none;
 	}
 
-	.navbar.change-bg .main-nav.active {
+	.navbar.change-bg .main-nav {
 		background-color: #576574;
 		transition: background-color 0.5s ease-in-out;
 	}
 
-	.navbar.change-bg .main-nav.active li {
+	.navbar.change-bg .main-nav li {
 		border-top: 1px solid rgba(255, 255, 255, .75);
 	}
 
