@@ -2,7 +2,7 @@ $(function(){
 	let nav_visible = 0;
 
 	$(document).scroll(function() {
-		if (!$(".navbar").hasClass('change-bg') && $(this).scrollTop() > $("header").height()) {
+		if (!$(".navbar").hasClass('change-bg') && $(this).scrollTop() >= $("header").height()) {
 			$(".navbar").addClass('change-bg');
 		}
 		else if (nav_visible == 0 && $(this).scrollTop() <= $("header").height()) {
@@ -54,4 +54,10 @@ $(function(){
 		$(".sliders").removeClass("show");
 		$(".sliders:nth-child(" + index + ")").addClass("show");
 	}
+
+	$(".main-nav li a").on("click", function(){
+		const attr_val = $(this).attr('href');
+		// const position = $(attr_val).offset().top;
+		$('html, body').animate({scrollTop: $(attr_val).offset().top - 70 }, 100);
+	});
 });
