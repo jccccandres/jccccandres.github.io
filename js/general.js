@@ -8,6 +8,14 @@ $(function(){
 		else if (nav_visible == 0 && $(this).scrollTop() <= $("header").height()) {
 			$(".navbar").removeClass('change-bg');
 		}
+
+		// back to top button
+		if ($(this).scrollTop() >= 1000) {
+			$(".back-to-top").show();
+		}
+		else {
+			$(".back-to-top").hide();	
+		}
 	});
 	
 	$(".navbar-toggle").on("click", () => {
@@ -57,7 +65,6 @@ $(function(){
 
 	$(".main-nav li a").on("click", function(){
 		const attr_val = $(this).attr('href');
-		// const position = $(attr_val).offset().top;
 		$('html, body').animate({scrollTop: $(attr_val).offset().top - 70 }, 100);
 	});
 });

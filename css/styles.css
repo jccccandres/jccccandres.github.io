@@ -504,3 +504,23 @@ footer .footer-text h4 {
 	}
 }
 /* / hearts animation in footer */
+
+.back-to-top {
+	display: none;
+	position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background: #1dd1a1;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    z-index: 10000;
+    text-align: center;
+}
+
+.back-to-top:link, .back-to-top:visited, .back-to-top:hover, .back-to-top:focus, .back-to-top:active {
+	text-decoration: none;
+    color: white;
+}
