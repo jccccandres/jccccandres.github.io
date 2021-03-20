@@ -74,18 +74,18 @@ a:hover {
 /* / nav */
 
 /* header */
-header {
+. home-pageheader {
 	background-color: #000;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
 }
 
-header .sliders {
+. home-pageheader .sliders {
 	display: none;
 }
 
-header .sliders.show {
+. home-pageheader .sliders.show {
 	display: block;
 	animation: 3s fadein;
 }
@@ -99,16 +99,16 @@ header .sliders.show {
 	}
 }
 
-header .prev-slide {
+. home-pageheader .prev-slide {
 	left: 0;
 
 }
 
-header .next-slide {
+. home-pageheader .next-slide {
 	right: 0;
 }
 
-header .prev-slide, header .next-slide {
+. home-pageheader .prev-slide, .home-page header .next-slide {
 	position: absolute;
     height: 50px;
     width: 50px;
@@ -120,19 +120,19 @@ header .prev-slide, header .next-slide {
     background: rgba(191, 191, 191, 0.5);
 }
 
-header .prev-slide img, header .next-slide img {
+. home-pageheader .prev-slide img, .home-page header .next-slide img {
 	height: 70%;
 	width: 70%;
 }
 
-header img {
+. home-pageheader img {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	object-fit: cover;
 }
 
-header .text-header {
+. home-pageheader .text-header {
 	color: #fff;
 	position: absolute;
 	width: 100%;
@@ -142,7 +142,7 @@ header .text-header {
 	padding: 0 30%;
 }
 
-header .text-header h2 {
+. home-pageheader .text-header h2 {
 	font-size: 40px;
 	margin-bottom: 10px;
 }
