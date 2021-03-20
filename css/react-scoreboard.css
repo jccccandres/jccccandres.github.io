@@ -1,0 +1,54 @@
+.scoreboard-page .navbar {
+	background-color: #576574;
+}
+
+.scoreboard-page footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+main {
+	margin-top: 100px;
+}
+
+.scoreboard {
+	position: relative;
+	width: 50%;
+	left: 25%;
+	background-color: #576574;
+	color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.scoreboard .header,
+.scoreboard .player {
+	display: flex;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+.scoreboard .header {
+    background-color: #222f3e;
+}
+
+.scoreboard .header .stats, 
+.scoreboard .player .counter {
+	position: absolute;
+	right: 20px;
+}
+
+.scoreboard .player .counter {
+	height: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.scoreboard .player .counter .counter-action {
+	height: 100%;
+    width: 60px;
+}
+
+.scoreboard .player .counter .counter-score {
+	margin: 0 25px;
+}
