@@ -36,6 +36,29 @@ main {
 	border-bottom: 1px solid #fff;
 }
 
+.scoreboard .player .remove-player {
+	width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    color: #ee5253;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    opacity: 0;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.scoreboard .player:hover .remove-player {
+	opacity: 1;	
+}
+
+.scoreboard .player .player-name {
+	margin-left: 25px;
+}
+
 .scoreboard .header .stats, 
 .scoreboard .player .counter {
 	position: absolute;
