@@ -32,10 +32,15 @@ main {
     background-color: #222f3e;
 }
 
+.scoreboard .player {
+	border-bottom: 1px solid #fff;
+}
+
 .scoreboard .header .stats, 
 .scoreboard .player .counter {
 	position: absolute;
 	right: 20px;
+	display: flex;
 }
 
 .scoreboard .player .counter {
@@ -50,5 +55,6 @@ main {
 }
 
 .scoreboard .player .counter .counter-score {
-	margin: 0 25px;
+	width: 60px;
+    align-self: center;
 }
