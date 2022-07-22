@@ -1,0 +1,55 @@
+body { 
+	padding: 0; 
+	margin: 0; 
+	background-color: #4d4d4d; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#container { 
+	text-align: center;
+}
+
+#container div { 
+	position: absolute; 
+	width: 100%; 
+	text-align: center; 
+	color: #fff; 
+	text-shadow: 2px 2px #000; 
+	font-size: 20px; 
+	z-index: 1; 
+}
+
+#container .quote { 
+	margin-top: 45vh; 
+	letter-spacing: 2px; 
+}
+
+#container img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 2 !important;
+}
+
+@keyframes append-animate {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#container .data-container {
+	animation: append-animate 2s linear;
+}

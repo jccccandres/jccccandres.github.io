@@ -1,0 +1,25 @@
+{
+	"data": [
+		{
+			"quote": "\"When you want something, all the universe conspires in helping you to achieve it.\"",
+			"author": "Paulo Coelho, 'The Alchemist'."
+		},
+		{
+			"quote": "\"Impossible is just an opinion.\"",
+			"author": "Paulo Coelho."
+		},
+		{
+			"quote": "\"The secret of getting ahead is getting started.\"",
+			"author": "Mark Twain."
+		},
+		{
+			"quote": "\"All our dreams can come true if we have the courage to pursue them.\"",
+			"author": "Walt Disney."
+		}
+	],
+	"images": [
+		"bora1.jpeg",
+		"bora2.jpeg",
+		"bora3.jpeg"
+	]
+}
