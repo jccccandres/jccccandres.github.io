@@ -247,7 +247,7 @@ footer .footer-text h4 {
 	padding: 50px 0 70px;
 }
 
-.story .about .sel {
+.story .about .jc {
 	display: flex;
 	/*margin: 30px 28% 0 33%;*/
 	margin: 30px 38% 0 23%;
@@ -257,7 +257,7 @@ footer .footer-text h4 {
 	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 }
 
-.story .about .jc {
+.story .about .sel {
 	display: flex;
 	/*margin: 30px 28% 0 33%;*/
 	margin: 30px 18% 0 43%;
