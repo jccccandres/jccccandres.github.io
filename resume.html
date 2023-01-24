@@ -4,7 +4,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+  <style type="text/css">
     body { font-size: 14px; }
     .paper {
       width: 21cm;
@@ -14,14 +14,27 @@
     }
     .bg-dark { background-color: #576574 !important; }
     .dark-header { background-color: #222f3e; }
+
+    @media print and (color) {
+      * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      .bg-dark { background-color: #576574 !important; }
+      .dark-header { background-color: #222f3e !important; }
+    }
   </style>
 </head>
 <body>
-  <div class="paper">
+  <div class="paper" id="paper">
     <div class="row m-0 h-100">
       <div class="col-4 bg-dark text-white p-0 h-100">
 
-        <div class="name-title px-4 py-3 pt-5">
+        <div class="name-title px-4 py-3 pt-4">
           <h2>John Carlo Andres</h2>
           <h5>Software Engineer</h5>
         </div>
@@ -77,24 +90,24 @@
 
         <div class="dark-header h6 px-4 py-2 mt-1">Areas of Expertise</div>
         <div class="expertise px-4 pb-2">
-          <div class="my-1">- PHP, ReactJS and SASS</div>
+          <div class="my-1">- Web development using HTML5, CSS, JavaScript, JQuery, PHP, ReactJS, Redux, Zustand, and Material UI</div>
           <div class="my-1">- Hands-on SQL experience in MySQL and PostgreSQL</div>
           <div class="my-1">- CodeIgniter and Laravel MVC frameworks</div>
-          <div class="my-1">- API development</div>
+          <div class="my-1">- RESTful API development</div>
         </div>
 
         <div class="dark-header h6 px-4 py-2 mt-1">Other Skills</div>
         <div class="expertise px-4 pb-2">
-          <div class="my-1">- Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-          <div class="my-1">- Officia maiores cumque dicta atque natus nam.</div>
-          <div class="my-1">- Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-          <div class="my-1">- Officia maiores cumque dicta atque natus nam.</div>
+          <div class="my-1">- Time management</div>
+          <div class="my-1">- Ability to learn new programming languages fast</div>
+          <div class="my-1">- Goal oriented</div>
+          <div class="my-1">- Great problem solver</div>
         </div>
       </div>
 
       <div class="col-8">
-        <div class="p px-4 py-3 pt-5">
-          Fullstack web developer with 6+ years of experience in creating systems and APIs using different tech stacks.
+        <div class="p px-4 py-3 pt-4">
+          A Software Engineer with 6+ years of experience of web development. Can adapt to both self-starting and collaborative environments while staying focused on achieving high-quality results. I am seeking a challenging opportunity to showcase my skills as a full stack developer or lead projects where my advanced skills and years of experience can be full utilized.
         </div>
 
         <div class="light-header h6 px-4 py-2 mt-2 border-top border-bottom">Work Experience</div>
@@ -103,15 +116,12 @@
           <div class="row m-0">
             <div class="col-2 p-0">2019-11 to present</div>
             <div class="col-10 p-0 ps-2">
-              <h5 class="mb-0">Sr. Software Engineer II</h5>
-              <small>Cloud Panda PH Inc.</small>
+              <h5 class="mb-1">Sr. Software Engineer II</h5>
+              <div><strong>Cloud Panda PH Inc.</strong></div>
               <ul class="p-0 ps-3">
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Developed web based system using ReactJS for frontend and PHP Laravel for backend</li>
+                <li>Experience in agile project management using Jira</li>
+                <li>Provided technical guidance to other software engineers</li>
                 <li>Developed, maintained and enhanced code using best practices in software engineering</li>
               </ul>
             </div>
@@ -120,8 +130,8 @@
           <div class="row m-0">
             <div class="col-2 p-0">2016-09 to 2019-11</div>
             <div class="col-10 p-0 ps-2">
-              <h5 class="mb-0">PHP Developer</h5>
-              <small>Optimind Technology Solutions</small>
+              <h5 class="mb-1">PHP Developer</h5>
+              <div><strong>Optimind Technology Solutions</strong></div>
               <ul class="p-0 ps-3">
                 <li>Modified existing software to correct and optimize efficiency</li>
                 <li>Gained experience working with various web development tools such as WordPress, CodeIgniter Framework, and Shopify</li>
@@ -138,8 +148,8 @@
           <div class="row m-0">
             <div class="col-2 p-0">2015-07 to 2016-02</div>
             <div class="col-10 p-0 ps-2">
-              <h5 class="mb-0">Web Developer (Intern)</h5>
-              <small>iConnect Global Communications Inc.</small>
+              <h5 class="mb-1">Web Developer (Intern)</h5>
+              <div><strong>iConnect Global Communications Inc.</strong></div>
               <ul class="p-0 ps-3">
                 <li>Worked on building web application using PHP Language</li>
                 <li>Evaluates and Tests web applications before deploying to production</li>
@@ -152,7 +162,7 @@
         <div class="light-header h6 px-4 py-2 mt-2 border-top border-bottom">Education</div>
         <div class="education ps-4 pe-2 pb-2">
           <div class="row m-0">
-            <div class="col-2 p-0">2011 - 2016</div>
+            <div class="col-2 p-0">2016</div>
             <div class="col-10 p-0 ps-2">
               <h5 class="mb-0">B.S. in Computer Science with specialization in Software Engineering</h5>
               <div>Far Eastern University Institute of Technology</div>
@@ -160,20 +170,34 @@
           </div>
         </div>
 
-        <div class="light-header h6 px-4 py-2 mt-2 border-top border-bottom">Other Skills</div>
-        <div class="other-skills ps-4 pe-2 pb-2">
-          <ul class="p-0 ps-3">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Officia maiores cumque dicta atque natus nam.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Officia maiores cumque dicta atque natus nam.</li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </div>
+
+  <div class="position-fixed top-0 end-0 m-3">
+    <button class="btn btn-lg btn-dark" onClick="printResume()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+        <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+        <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+      </svg>
+      Print
+    </button>
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const printResume = () => {
+      const content = document.getElementById("paper").innerHTML;
+      const page = window.open('');
+      page.document.write('<html>');
+      page.document.write('<head>' + document.head.innerHTML + '</head>');
+      page.document.write('<body>');
+      page.document.write(content);
+      page.document.write('</body></html>');
+      page.document.close();
+      setTimeout(function(){page.print(); page.close()}, 1000);
+      return true;
+    }
+  </script>
 </body>
 </html>
